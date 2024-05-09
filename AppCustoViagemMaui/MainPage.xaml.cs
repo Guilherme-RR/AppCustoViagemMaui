@@ -18,12 +18,12 @@ namespace AppCustoViagemMaui
             viag.Rendimento = Convert.ToDouble(txt_rendimento.Text);
             viag.Preco = Convert.ToDouble(txt_combustivel.Text);
 
-            await Navigation.PushAsync(new Views.CalcViagem());
+            await Navigation.PushAsync(new Views.AddPedagio());
         }
 
         private async void btn_calc_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.AddPedagio());
+            await Navigation.PushAsync(new Views.CalcViagem());
         }
 
         private async void btn_ListPed_Clicked(object sender, EventArgs e)
